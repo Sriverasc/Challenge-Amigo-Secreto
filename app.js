@@ -59,7 +59,8 @@ const sortearAmigo = () => {
         alert("Debe haber al menos dos amigos para realizar el sorteo");
         return;
     }
+    
+    amigoSorteado = nombres[Math.floor(Math.random() * numeroAmigos)]; // Se selecciona un amigo al azar
 
-    amigoSorteado = nombres[Math.floor(Math.random() * numeroAmigos) + 1]; // Se selecciona un amigo al azar
     document.getElementById("resultado").textContent = `El amigo sorteado es: ${amigoSorteado}`; // Se muestra el resultado del sorteo
 }
