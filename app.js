@@ -44,3 +44,4 @@ const agregarAmigo = () => {
         document.getElementById("amigo").value = ""; // Se limpia el input
     }
 }
+
