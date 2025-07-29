@@ -59,8 +59,15 @@ const sortearAmigo = () => {
         alert("Debe haber al menos dos amigos para realizar el sorteo");
         return;
     }
-    
+
     amigoSorteado = nombres[Math.floor(Math.random() * numeroAmigos)]; // Se selecciona un amigo al azar
 
     document.getElementById("resultado").textContent = `El amigo sorteado es: ${amigoSorteado}`; // Se muestra el resultado del sorteo
+}
+
+const reiniciarSorteo = () => {
+    nombres.length = 0; // Se vacía el array de nombres
+    li.innerHTML = ""; // Se limpia la lista de amigos
+    document.getElementById("resultado").textContent = ""; // Se limpia el resultado del sorteo
+    document.getElementById("amigo").value = ""; // Se limpia el input
 }
