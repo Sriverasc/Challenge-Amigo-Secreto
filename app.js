@@ -50,3 +50,16 @@ const eliminarAmigo = (element) => {
     nombres.splice(nombres.indexOf(nombre), 1);
     element.parentElement.remove();
 }
+
+const sortearAmigo = () => {
+    const numeroAmigos = nombres.length; // Se obtiene el número de amigos
+    let amigoSorteado;
+
+    if (numeroAmigos < 2) {
+        alert("Debe haber al menos dos amigos para realizar el sorteo");
+        return;
+    }
+
+    amigoSorteado = nombres[Math.floor(Math.random() * numeroAmigos) + 1]; // Se selecciona un amigo al azar
+    document.getElementById("resultado").textContent = `El amigo sorteado es: ${amigoSorteado}`; // Se muestra el resultado del sorteo
+}
