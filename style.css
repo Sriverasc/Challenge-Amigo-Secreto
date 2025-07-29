@@ -160,3 +160,22 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.name-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-text {
+    width: 200px;
+    flex: 1;
+    padding: 0 10px;
+    font-size: 18px;
+    color: var(--color-text);
+}
+
+.button-remove {
+    width: 30px;
+    cursor: pointer;
+}
