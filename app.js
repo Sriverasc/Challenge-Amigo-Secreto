@@ -45,3 +45,8 @@ const agregarAmigo = () => {
     }
 }
 
+const eliminarAmigo = (element) => {
+    const nombre = element.parentElement.querySelector(".name-text").textContent;
+    nombres.splice(nombres.indexOf(nombre), 1);
+    element.parentElement.remove();
+}
